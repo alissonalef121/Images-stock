@@ -56,6 +56,7 @@ export default function Home() {
             }
             img{
                 transition: transform .15s ease 0s;
+                min-width: max-content!important;
             }
         }
     `
@@ -68,8 +69,8 @@ export default function Home() {
                         <li key={element.id}>
                             <Image
                                 src={element.download_url}
-                                width={150}
-                                height={150}
+                                width={160}
+                                height={160}
                             />
                         </li>
                     ))
